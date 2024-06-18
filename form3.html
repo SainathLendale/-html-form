@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset and legend</title>
+    <style>
+        .input {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your Address</legend>
+        <table>
+            <tr>
+                <td><label>First Name</label></td>
+                <td> <input type="text" name="NAME" placeholder="Enter your first name" class="input"></td>
+            </tr>
+            <tr>
+                <td> <label>Last Name</label></td>
+                <td> <input type="text" name="NAME" placeholder="Enter your last name" class="input"></td>
+            </tr>
+            <tr>
+                <td> <label>Street</label></td>
+                <td> <input type="text" name="street" placeholder="Enter your street" class="input"></td>
+            </tr>
+            <tr>
+                <td><label>City</label></td>
+                <td> <input type="text" name="city" placeholder="Enter your city" class="input"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Additional Details</legend>
+        <table>
+            <tr>
+                <td style="vertical-align:top"><label>Biography</label></td>
+                <td><textarea name="biography" rows="2" cols="20" class="input"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Image</lable>
+                </td>
+                <td><input type="file" id="my file" name="my file" class="input"></td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Age Group</lable>
+                </td>
+                <td> <select name="age" id="group" class="input">
+                        <optgroup lable="age group">
+                            <option value="0 to 9 years">0 to 9 years</option>
+                            <option value="10 to 20 years">10 to 20 years</option>
+                            <option value="21 to 30 years">21 to 30 years</option>
+                            <option value="30 to 40years">31 to 40 years</option>
+                            <option value="41 to 50 years">41 to 50 years</option>
+                        </optgroup>
+                    </select></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    
+
+    <fieldset>
+        <legend>Interests</legend>
+        <table>
+            <tr>
+                <td style="vertical-align:top"><label>Hobbies</label></td>
+                <td>
+                    <select multiple>
+                        <option>Playing soccer</option>
+                        <option>Dancing</option>
+                        <option>Gardening</option>
+                        <option>Watching Movies</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Favourite Car?</lable>
+                </td>
+                <td> <select name="car" id="car">
+                        <!-- <optgroup lable="favourite car"> -->
+                        <option value="volvo">volvo</option>
+                        <option value="i 10">i10</option>
+                        <!-- </optgroup> -->
+                        <option value="audi">Audi</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="german cars">German cars</option>
+
+                    </select></td>
+
+
+
+            </tr>
+            <tr>
+                <td><label>Favourite Public Transport?</label></td>
+                <td>
+                    <select multiple style="width: 80%;">
+                        <optgroup label="Ground">
+                            <option align="center">Train</option>
+                            <option align="center">Bus</option>
+                        </optgroup>
+
+                        <optgroup label="Water">
+                            <option align="center">Ship</option>
+                            <option align="center">Boat</option>
+                        </optgroup>
+                    </select>
+                </td>
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro-assign</title>
+    <style>
+        .form{
+            background-color: rgba(5, 5, 99, 0.751);
+            width:700px;
+            height:350px;
+        }
+        .h1{
+            color: white;
+             text-align:center;
+        }
+       .row1{
+        display: flex;
+        color: white;
+       }
+       .col1{
+        margin-left: 7px;
+       }
+       .col2{
+        margin-left: 53px;
+       }
+      .row2{
+        color: white;
+        margin-left: 7px;
+      }
+      .btn{
+        background-color: rgb(225, 112, 13);
+        color: white;
+        border:none;
+        width: 110px;
+        height: 25px;
+       border-radius: 5px;
+      }
+      .btndiv{
+        text-align:center;
+      }
+    </style>
+</head>
+<body>
+    <form class="form">
+     <h1 class="h1">Application Form</h1>
+     <div class="row1">
+        <div class="col1"><lable>First Name:</lable>
+            <input type="text"style="margin-left: 11px;"><br><br>
+            <lable>Date of birth:</lable>
+            <input type="date" ><br><br>
+           <lable>Gender:</lable>
+           <select style="margin-left: 35px;">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+
+        </div>
+        <div class="col2"><lable>Last Name:</lable>
+            <input type="text" style="margin-left: 23px;"><br><br>
+            <lable>Age:</lable>
+            <input type="number" style="margin-left: 67px;"><br><br>
+            <lable>Email Address:</lable>
+            <input type="text" placeholder="Enter email address"><br><br>
+        </div>
+    </div>
+    <div class="row2">
+        <label>Positions Available:</label>
+        <input type="radio" name="position">Junior Developer
+        <input type="radio" name="position" >Mid-level Developer
+        <input type="radio" name="position">Senior Developer<br><br>
+        <label>Programming Languages:</label>
+        <input type="checkbox" >Java
+        <input type="checkbox" >Java Script
+        <input type="checkbox" >Python
+
+    </div><br>
+  <div class="row2">
+    <label>Password:</label>
+    <input type="password">
+    <label class="col2">Confirm Password:</label>
+    <input type="password">
+  </div><br>
+  <div class="btndiv">
+   <button class="btn">Submit</button>
+   <button class="btn">Reset</button>
+    </div>
+    </form>
+</body>
+</html>
